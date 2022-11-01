@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const SidebarLink = ({ text, Icon }) => {
   return (
@@ -9,7 +9,7 @@ const SidebarLink = ({ text, Icon }) => {
       <Icon />
       <span className="hidden xl:inline">{text}</span>
     </div>
-  );
-};
+  )
+}
 
-export default SidebarLink;
+export default SidebarLink

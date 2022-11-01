@@ -1,17 +1,14 @@
-import React from "react";
-import { BiHash } from "react-icons/bi";
-import { AiFillHome, AiOutlineInbox, AiOutlineUser } from "react-icons/ai";
-import { BsBell, BsBookmark, BsThreeDots, BsTwitter } from "react-icons/bs";
-import {
-  HiOutlineClipboardList,
-  HiOutlineDotsCircleHorizontal,
-} from "react-icons/hi";
-import SidebarLink from "./SidebarLink";
-import { signOut, useSession } from "next-auth/react";
-import Image from "next/image";
+import React from 'react'
+import { BiHash } from 'react-icons/bi'
+import { AiFillHome, AiOutlineInbox, AiOutlineUser } from 'react-icons/ai'
+import { BsBell, BsBookmark, BsThreeDots, BsTwitter } from 'react-icons/bs'
+import { HiOutlineClipboardList, HiOutlineDotsCircleHorizontal } from 'react-icons/hi'
+import SidebarLink from './SidebarLink'
+import { signOut, useSession } from 'next-auth/react'
+import Image from 'next/image'
 
 const Sidebar = () => {
-  const { data: session } = useSession();
+  const { data: session } = useSession()
 
   return (
     <div className="hidden sm:flex flex-col items-center xl:items-start xl:w-[340px] p-2 fixed h-full border-r border-gray-400 pr-0 xl:pr-8">
@@ -49,7 +46,7 @@ const Sidebar = () => {
         <BsThreeDots className="h-5 hidden xl:inline ml-10" />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Sidebar;
+export default Sidebar
